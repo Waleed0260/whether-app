@@ -1,0 +1,56 @@
+.tomp{
+    background-color: rgb(188, 145, 228);
+    /* height: 61vh; */
+    width: 30vw;
+    height: 25rem;
+    border-radius: 5px;
+}
+input{
+    border-radius: 30px;
+    border: none;
+    margin-top: 18px;
+    /* height: 5vh; */
+    height: 30px;
+}
+
+
+
+.location{
+    margin-top: 90px;
+}
+.wave{
+    opacity: 0.3;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    background-color: white;
+    width: 50rem;
+    height: 50rem;
+    margin-left: -25rem;
+    margin-top: -20rem;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 3000ms infinite linear;
+    z-index: 1;
+}
+.-three{
+    animation: drift 5000ms infinite linear;
+    z-index: 2 !important;
+    opacity: 0.2;
+}
+.-two{
+    animation: drift 7000ms infinite linear;
+    z-index: 1 !important;
+    opacity: 0.1;
+}
+@keyframes drift {
+    from {
+        transform: rotate(0deg);
+    }
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
